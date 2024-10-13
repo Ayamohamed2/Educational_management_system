@@ -15,7 +15,7 @@ namespace Educational_management_system
                 string line = sr.ReadLine();
                 int cnt = 1;
                 while(line != null)
-                {// name code id
+                {
                     string[] data = line.Split(' ');
                     Course c = new Course($"{data[0]} {data[1]}", data[2],cnt);
                     AvailableCourses.Add(c);
