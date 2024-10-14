@@ -44,35 +44,23 @@ namespace Educational_management_system
             this.Students.Add(student);
         }
 
-        public void remove_student(int studentid)
-        {
-            foreach (Student student in this.Students)
-            {
-                if(student.id==studentid)
-                {  
-                    Students.Remove(student);
-                    foreach(Assignment ass in this.Assignments)
-                    {
-                        foreach(Solution sol in ass.solutions)
-                        {
-                            if (sol.student == student)
-                            {
-                                ass.solutions.Remove(sol);
-                                break;
+      public void remove_student(Student ss)
+ {
+     
+             Students.Remove(ss);
+     foreach (Assignment ass in this.Assignments)
+     {
+         foreach (Solution sol in ass.solutions)
+         {
+             if (sol.student.id == ss.id)
+             {
+                 ass.solutions.Remove(sol);
+                 break;
 
-                            }
-                        }
-                    }
-
-
-                  
-                 
-
-                }
-                
-            }
-            
-        }
+             }
+         }
+     } 
+ }
       
         public void Course_view()
         {
