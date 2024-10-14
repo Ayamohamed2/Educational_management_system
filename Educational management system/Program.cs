@@ -421,10 +421,10 @@ namespace Educational_management_system
                                 }
                                 if (choice == 1)
                                 {
-                                    Course course = student.unRegister(id);
-                                    course.remove_student(student.id);
-                                    Console.Clear();
-                                    continue;
+                                     Course course = student.unRegister(id);
+                                     course.remove_student(student);
+                                     Console.Clear();
+                                     continue;
 
                                 }
                                 else if (choice == 2)
