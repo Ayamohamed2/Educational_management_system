@@ -38,10 +38,6 @@ This system acts as a digital assistant for educational institutions by offering
 
 * **Language:** C#
 * **Programming Paradigm:** Object-Oriented Programming (OOP)
-* **Core Concepts:**
-
-  * Classes and Objects
-  * Inheritance and Encapsulation
 * **IDE:** Visual Studio 
 
 
